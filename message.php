@@ -28,7 +28,7 @@ if(mysqli_num_rows($run_query) > 0){
                 $p=  mysqli_fetch_row($run_query2);
                 if ($x == 0)
                 {
-                    $variable = "buenas, creo haber entendido correctamente, buscas un perfume para usar en una $s, nuestra primera recomendacion es $p[$x]";
+                    $variable = ", creo haber entendido correctamente, buscas un perfume para usar en una $s, nuestra primera recomendacion es $p[$x]";
                 }   
                 else
                 {
@@ -40,7 +40,7 @@ if(mysqli_num_rows($run_query) > 0){
             echo $variable;
         }
         else{
-            echo "Perdona, no te entiendo!";
+            echo ", Perdoname la molestia, no te entiendi, puedes decirlo de otra forma?";
         }
 
 }else{
@@ -54,7 +54,7 @@ if(mysqli_num_rows($run_query) > 0){
     }
     else
     {
-        echo "Perdona, no te entiendo!";
+        echo ", Perdoname la molestia, no te entiendi, puedes decirlo de otra forma?";
     }
     
 }
