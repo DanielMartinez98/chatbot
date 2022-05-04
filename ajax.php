@@ -2,7 +2,7 @@
 
 /* Establishes a connection with database. First argument is the server name, second is the username for database, third is password (blank for me) and final is the database name 
 */
-$conn = mysqli_connect("localhost","root","","chatprueba");
+$conn = mysqli_connect("LocalHost","root","","chatprueba");
 
 // If connection is established succesfully
 if($conn)
